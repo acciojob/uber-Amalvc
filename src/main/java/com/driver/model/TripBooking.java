@@ -85,6 +85,10 @@ public class TripBooking {
         this.customer = customer;
     }
 
+    public Customer getCustomer() {
+        return customer;
+    }
+
     @ManyToOne
     @JoinColumn
     private Customer customer;
