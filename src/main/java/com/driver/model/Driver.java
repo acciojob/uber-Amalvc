@@ -8,7 +8,7 @@ import java.util.List;
 @Table
 public class Driver {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int driverId;
 
     private String mobile;
@@ -64,7 +64,8 @@ public class Driver {
     public Driver(){
 
     }
-    public Driver(String mobile,String password){
+    public Driver(int driverId,String mobile,String password){
+        this.driverId=driverId;
         this.mobile=mobile;
         this.password=password;
     }
