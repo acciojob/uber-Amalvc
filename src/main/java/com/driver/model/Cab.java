@@ -13,8 +13,9 @@ public class Cab {
 
     private boolean available;
 
-    @OneToOne(mappedBy = "cab",cascade = CascadeType.ALL)
-    Driver driver;
+    @OneToOne
+    @JoinColumn
+    private Driver driver;
 
     public int getId() {
         return id;

@@ -1,6 +1,7 @@
 package com.driver.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -14,9 +15,9 @@ public class Driver {
 
     private String password;
 
-    @OneToOne
-    @JoinColumn
+    @OneToOne(mappedBy = "driver",cascade = CascadeType.ALL)
     private Cab cab;
+
 
     public String getPassword() {
         return password;
@@ -51,7 +52,7 @@ public class Driver {
     }
 
     @OneToMany(mappedBy = "driver",cascade = CascadeType.ALL)
-    List<TripBooking> tripBookingList;
+    List<TripBooking> tripBookingList=new ArrayList<>();
 
     public List<TripBooking> getTripBookingList() {
         return tripBookingList;
