@@ -36,10 +36,15 @@ public class AdminServiceImpl implements AdminService {
 	@Override
 	public Admin updatePassword(Integer adminId, String password) {
 		//Update the password of admin with given id
-		Admin ad=adminRepository1.findById(adminId).get();
-		ad.setPassword(password);
-		adminRepository1.save(ad);
-		return ad;
+		if(adminRepository1.findById(adminId).isPresent()) {
+			Admin ad = adminRepository1.findById(adminId).get();
+			ad.setPassword(password);
+			adminRepository1.save(ad);
+			return ad;
+		}
+		else{
+			return null;
+		}
 
 	}
 
