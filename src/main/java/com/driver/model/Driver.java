@@ -8,7 +8,7 @@ import java.util.List;
 public class Driver {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private int driverId;
 
     private String mobile;
 
@@ -34,12 +34,12 @@ public class Driver {
         this.mobile = mobile;
     }
 
-    public int getId() {
-        return id;
+    public int getDriverId() {
+        return driverId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setDriverId(int driverId) {
+        this.driverId = driverId;
     }
 
     public void setCab(Cab cab) {

@@ -53,7 +53,7 @@ public class CustomerServiceImpl implements CustomerService {
 			throw new Exception("No cab available");
 		}
 		for(Driver driver:d){
-			int id=driver.getId();
+			int id=driver.getDriverId();
 			if(id<val){
 				val=id;
 				flag=true;
@@ -81,7 +81,7 @@ public class CustomerServiceImpl implements CustomerService {
 	public void cancelTrip(Integer tripId){
 		//Cancel the trip having given trip Id and update TripBooking attributes accordingly
 		TripBooking t=tripBookingRepository2.findById(tripId).get();
-		t.setTripStatus(TripStatus.CANCELED);
+		t.setStatus(TripStatus.CANCELED);
 		Driver d=t.getDriver();
 		d.getCab().setAvailable(true);
 		tripBookingRepository2.deleteById(tripId);
@@ -94,7 +94,7 @@ public class CustomerServiceImpl implements CustomerService {
 	public void completeTrip(Integer tripId){
 		//Complete the trip having given trip Id and update TripBooking attributes accordingly
 		TripBooking t=tripBookingRepository2.findById(tripId).get();
-		t.setTripStatus(TripStatus.COMPLETED);
+		t.setStatus(TripStatus.COMPLETED);
 		Driver d=t.getDriver();
 		d.getCab().setAvailable(true);
 		tripBookingRepository2.save(t);

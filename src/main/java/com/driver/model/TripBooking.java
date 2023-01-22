@@ -37,7 +37,7 @@ public class TripBooking {
         return toLocation;
     }
 
-    public TripStatus getTripStatus() {
+    public TripStatus getStatus() {
         return tripStatus;
     }
 
@@ -59,7 +59,7 @@ public class TripBooking {
         this.toLocation = toLocation;
     }
 
-    public void setTripStatus(TripStatus tripStatus) {
+    public void setStatus(TripStatus tripStatus) {
         this.tripStatus = tripStatus;
     }
     public TripBooking(){

@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Cab {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private int cabId;
 
     private int perKmRate;
 
@@ -16,8 +16,8 @@ public class Cab {
     @OneToOne(mappedBy = "cab",cascade = CascadeType.ALL)
     Driver driver;
 
-    public void setId(int id) {
-        this.id = id;
+    public int getCabId() {
+        return cabId;
     }
 
     public void setAvailable(boolean available) {
@@ -32,8 +32,8 @@ public class Cab {
         this.perKmRate = perKmRate;
     }
 
-    public int getId() {
-        return id;
+    public void setCabId(int cabId) {
+        this.cabId = cabId;
     }
 
     public Driver getDriver() {
@@ -49,6 +49,9 @@ public class Cab {
     }
     public Cab(){
 
+    }
+    public boolean getAvailable(){
+        return available;
     }
 }
 
