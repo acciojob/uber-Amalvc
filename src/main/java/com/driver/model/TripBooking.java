@@ -96,5 +96,9 @@ public class TripBooking {
     public int getTripBookingId() {
         return tripBookingId;
     }
+
+    public void setTripBookingId(int tripBookingId) {
+        this.tripBookingId = tripBookingId;
+    }
 }
 
