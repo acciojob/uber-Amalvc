@@ -23,7 +23,7 @@ Before you begin, ensure you have met the following requirements:
 
 2. **Visual Studio Code (VS Code)**: You can install the latest version of VS Code from [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-3. **MySQL WORKBENCH**: Install MySQL Workbench, to access the Database running on your Local Docker instances via UI. You can download and install MySQL WORKBENCH from [https://dev.mysql.com/downloads/workbench/](https://dev.mysql.com/downloads/workbench/).
+3. **MySQL WorkBench**: Install MySQL Workbench, to access the Database running on your Local Docker instances via UI. You can download and install MySQL WORKBENCH from [https://dev.mysql.com/downloads/workbench/](https://dev.mysql.com/downloads/workbench/).
 
 These tools are essential for setting up and running the Med Teams Backend project locally.
 
@@ -149,7 +149,7 @@ Using these extensions can significantly improve code quality, streamline develo
 ## Error Code Schema
 In our project, we have implemented a robust error code system to streamline the process of diagnosing and resolving issues that users might encounter. Each error code is a unique identifier associated with a specific type of error or problem within the application. This system allows us to provide users with meaningful feedback about what went wrong and offers suggestions for resolving the issue.
 
-To learn more about how our error code system works and to access a comprehensive list of common error codes along with detailed explanations and resolutions, please visit:[Error Code Document](https://docs.google.com/document/d/1qfZp2ap2pXZgxnQOTxbxwOQoQaribIsN0vCfPbJKWw4/edit#heading=h.k9xre)
+To learn more about how our error code system works and to access a comprehensive list of common error codes along with detailed explanations and resolutions, please visit: [Error Code Document](https://docs.google.com/document/d/1qfZp2ap2pXZgxnQOTxbxwOQoQaribIsN0vCfPbJKWw4/edit#heading=h.k9xre)
 
 ...
 ## Coding Practices
