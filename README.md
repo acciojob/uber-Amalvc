@@ -149,7 +149,7 @@ Using these extensions can significantly improve code quality, streamline develo
 ## Error Code Schema
 In our project, we have implemented a robust error code system to streamline the process of diagnosing and resolving issues that users might encounter. Each error code is a unique identifier associated with a specific type of error or problem within the application. This system allows us to provide users with meaningful feedback about what went wrong and offers suggestions for resolving the issue.
 
-To learn more about how our error code system works and to access a comprehensive list of common error codes along with detailed explanations and resolutions, please visit: [Error Code Document](https://docs.google.com/document/d/1qfZp2ap2pXZgxnQOTxbxwOQoQaribIsN0vCfPbJKWw4/edit#heading=h.k9xre)
+To learn more about how our error code system works and to access a comprehensive list of common error codes along with detailed explanations and resolutions, please visit: [Error Code Document](https://docs.google.com/document/d/1qfZp2ap2pXZgxnQOTxbxwOQoQaribIsN0vCfPbJKWw4/edit#heading=h.k9xrep6d5den)
 
 ...
 ## Coding Practices
