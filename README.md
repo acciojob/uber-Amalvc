@@ -23,7 +23,7 @@ Before you begin, ensure you have met the following requirements:
 
 2. **Visual Studio Code (VS Code)**: You can install the latest version of VS Code from [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-3. **MySQL**: Install MySQL, a relational database management system. You can download and install MySQL from [https://www.mysql.com/downloads/](https://www.mysql.com/downloads/).
+3. **MySQL WORKBENCH**: Install MySQL Workbench, to access the Database running on your Local Docker instances via UI. You can download and install MySQL WORKBENCH from [https://dev.mysql.com/downloads/workbench/](https://dev.mysql.com/downloads/workbench/).
 
 These tools are essential for setting up and running the Med Teams Backend project locally.
 
@@ -88,6 +88,7 @@ In the MedTeams Backend project, we follow a feature branching workflow with a d
 4. **Testing**: Once your feature is ready, ensure that it's thoroughly tested and meets the project's quality standards.
 
 5. **Merge and Deployment**: After testing and code review, your feature branch can be merged into the stable branch. This integration ensures that new features are added while maintaining the stability of the main codebase.
+   
 ...
 
 ## Database Schema
@@ -96,6 +97,7 @@ The MedTeams Backend project uses a structured database schema to efficiently ma
 [Access Database Schema](https://docs.google.com/spreadsheets/d/1mBt1kCQQLaHrMMDHU1EJsKR-vqOXKEwzyTaBWZ1owfM/edit#gid=377800607)
 
 Understanding the database schema is essential for developing new features, performing database operations, and ensuring data consistency.
+
 ...
 
 ## API Specification
@@ -104,15 +106,17 @@ The MedTeams Backend project follows well-defined API specifications to ensure c
 [Access API Specifications](https://docs.google.com/document/d/1qfZp2ap2pXZgxnQOTxbxwOQoQaribIsN0vCfPbJKWw4/edit#heading=h.ad5xjxon8tq1)
 
 Understanding the API specifications is crucial for developing, testing, and integrating new features, as well as for maintaining a clear understanding of the interactions within the application.
+
 ...
 
 ## Project Management with Jira
 
 We manage our development tasks, issues, and project progress using Jira, a robust project management tool. Our Jira board provides an overview of ongoing tasks, features in development, bug fixes, and more. You can access our Jira board using the provided link below:
 
-[Access Jira Board](link_to_your_jira_board)
+[Access Jira Board](https://mindstixlabs.atlassian.net/jira/software/projects/BL/boards/103)
 
 The Jira board is a valuable resource for tracking the status of tasks, collaborating with team members, and staying informed about the project's progress.
+
 ...
 
 ## Architecture Pattern
@@ -127,6 +131,7 @@ MedTeams Backend project follows the Model-View-Controller (MVC) architecture pa
 To delve deeper into the MVC framework and gain a comprehensive understanding of how it works, you can explore the detailed explanation provided in this [MVC Framework Introduction guide by GeeksforGeeks](https://www.geeksforgeeks.org/mvc-framework-introduction/).
 
 By implementing the MVC architecture in the MedTeams Backend project, we achieve a separation of concerns, modularity, and maintainability, resulting in a well-organized and efficient codebase.
+
 ...
 
 ## Recommended Extensions
@@ -142,6 +147,9 @@ Using these extensions can significantly improve code quality, streamline develo
 ...
 
 ## Error Code Schema
+In our project, we have implemented a robust error code system to streamline the process of diagnosing and resolving issues that users might encounter. Each error code is a unique identifier associated with a specific type of error or problem within the application. This system allows us to provide users with meaningful feedback about what went wrong and offers suggestions for resolving the issue.
+
+To learn more about how our error code system works and to access a comprehensive list of common error codes along with detailed explanations and resolutions, please visit:[Error Code Document](https://docs.google.com/document/d/1qfZp2ap2pXZgxnQOTxbxwOQoQaribIsN0vCfPbJKWw4/edit#heading=h.k9xre)
 
 ...
 ## Coding Practices
